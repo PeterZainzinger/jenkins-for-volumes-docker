@@ -13,6 +13,7 @@ RUN gpg --keyserver pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4
 
 RUN apt-get install -y --force-yes docker-engine=1.9.1-0~jessie
 
+
 RUN usermod -aG docker jenkins && apt-get -y install python-pip && pip install docker-py
 
 
